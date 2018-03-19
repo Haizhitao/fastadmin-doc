@@ -365,7 +365,7 @@ protected $noNeedRight = []; //无需鉴权的方法,但需要登录
 protected $noNeedLogin = ['mywork'];
 ```
 
-比如我们有定义一个方法`mytest`，而这个方法是需要登录后仍何管理员都可以访问，则我们需要在当前的控制器定义
+比如我们有定义一个方法`mytest`，而这个方法是需要登录后任何管理员都可以访问，则我们需要在当前的控制器定义
 
 ```php
 prtected $noNeedRight = ['mytest'];
